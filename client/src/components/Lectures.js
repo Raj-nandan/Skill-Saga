@@ -17,11 +17,12 @@ const lecturesData = [
     duration: "1 hr",
     skillLevel: "Intermediate",
     category: "CS Core",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/dummy${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=8hly31xKli0', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=czZpD2cxc1Y', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=QGD8OhzpKsM', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=DFQhFOw2Zx0', seen: false }
+    ]
   },
   {
     id: 2,
@@ -30,11 +31,12 @@ const lecturesData = [
     duration: "1.5 hrs",
     skillLevel: "Beginner",
     category: "CS Electives",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/webdev${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=UB1O30fR-EE', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=8gNrZ4lAnAw', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=pQN-pnXPaVg', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=GlLDDZf6aH4', seen: false }
+    ]
   },
   {
     id: 3,
@@ -43,11 +45,12 @@ const lecturesData = [
     duration: "2 hrs",
     skillLevel: "Intermediate",
     category: "Medical",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/anatomy${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=LPjzfGChGlE', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=uBGl2BujkPQ', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=SM9hxQe3hRk', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=XUmm8QzrgiQ', seen: false }
+    ]
   },
   {
     id: 4,
@@ -56,11 +59,12 @@ const lecturesData = [
     duration: "1.5 hrs",
     skillLevel: "Beginner",
     category: "Engineering",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/mecheng${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=SYg5n-_0H3w', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=KQIlgwtEFmI', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=fJr3em5JHkk', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=pLTkwmIKj9I', seen: false }
+    ]
   },
   {
     id: 5,
@@ -69,11 +73,12 @@ const lecturesData = [
     duration: "2 hrs",
     skillLevel: "Intermediate",
     category: "Mathematics",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/calculus${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=WUvTyaaNkzM', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=U39RMUzCjiU', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=wTX-DKdM8t0', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=2a7h2LP6k1U', seen: false }
+    ]
   },
   {
     id: 6,
@@ -82,11 +87,12 @@ const lecturesData = [
     duration: "2.5 hrs",
     skillLevel: "Advanced",
     category: "Physics",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/quantum${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=OgNNa8B-3YM', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=3f15lCGbQ6A', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=pqZ9fLdh2yA', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=bZMw-Fv_lM4', seen: false }
+    ]
   },
   {
     id: 7,
@@ -95,11 +101,12 @@ const lecturesData = [
     duration: "2 hrs",
     skillLevel: "Intermediate",
     category: "Chemistry",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/orgchem${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=sWf7k1x9XR4', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=1mAP7uLQSdg', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=E5qsyi_M3pI', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=pA7rXqgRTxU', seen: false }
+    ]
   },
   {
     id: 8,
@@ -108,11 +115,12 @@ const lecturesData = [
     duration: "1.5 hrs",
     skillLevel: "Intermediate",
     category: "Biology",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/genetics${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=8m6hHRlKwxY', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=cDC3v7tkkc4', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=OkD9A6eS6Bk', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=5c3zZ5OLeyI', seen: false }
+    ]
   },
   {
     id: 9,
@@ -121,11 +129,12 @@ const lecturesData = [
     duration: "1.5 hrs",
     skillLevel: "Beginner",
     category: "Economics",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/microecon${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=lbDIcj73sXc', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=j6kXyKP_FCw', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=d4sI8W2kKjA', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=9GjO5HzY3y8', seen: false }
+    ]
   },
   {
     id: 10,
@@ -134,11 +143,12 @@ const lecturesData = [
     duration: "2 hrs",
     skillLevel: "Intermediate",
     category: "Psychology",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/cogpsych${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=vo4pMVb0R6M', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=3hfb6J2YA-M', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=Qj_tu9aW0RM', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=N3EUXk4b8fc', seen: false }
+    ]
   },
   {
     id: 11,
@@ -147,11 +157,12 @@ const lecturesData = [
     duration: "2 hrs",
     skillLevel: "Intermediate",
     category: "Literature",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/shakespeare${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=G7UdbIZrTL8', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=8XnpKZHT7wA', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=p3hCbqOwUNU', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=XfyyqaNWMOU', seen: false }
+    ]
   },
   {
     id: 12,
@@ -160,15 +171,14 @@ const lecturesData = [
     duration: "2.5 hrs",
     skillLevel: "Intermediate",
     category: "History",
-    videos: Array(10).fill().map((_, i) => ({
-      id: `v${i+1}`,
-      url: `https://youtu.be/ww2${i+1}`,
-      seen: false
-    }))
+    videos: [
+      { id: 'v1', url: 'https://www.youtube.com/watch?v=HUqy-OQvVtI', seen: false },
+      { id: 'v2', url: 'https://www.youtube.com/watch?v=trM2Tq6iOuc', seen: false },
+      { id: 'v3', url: 'https://www.youtube.com/watch?v=k7k4jH7NqUw', seen: false },
+      { id: 'v4', url: 'https://www.youtube.com/watch?v=MdZLZ3v3EUs', seen: false }
+    ]
   }
 ];
-
-
 
 const Lectures = () => {
   const [lectures, setLectures] = useState(lecturesData);
@@ -224,7 +234,7 @@ const Lectures = () => {
   };
 
   const handleSearchSubmit = (e) => {
-    e.preventDefault(); // Prevents the page from refreshing on form submission
+    e.preventDefault();
     applyFilters();
   };
 
